@@ -10,7 +10,7 @@ $(function(){
 
 let params = new URLSearchParams(location.search);
 var name = params.get('to');
-
-if (name) {
+console.log(name);
+if (name != 'null') {
   $('.name').text(name)
 }
