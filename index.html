@@ -14,21 +14,34 @@
     <div class="front">
       <div class="mail">
         <p class="from">From: tất cả các bạn nam lớp 11B5</p>
-        <p class="to">To: bạn <span class="name">abc</span> <3</p>
-        <p class="next">Bấm để đọc thư</p>
+        <p class="to">To: bạn <span class="name"></span></p>
+            <p class="next">Bấm để đọc thư</p>
       </div>
     </div>
     <div class="back">
-      <div class="letter letter1">
-        <p>Xin chúc bạn <span class="name"> abc</span> ngày phụ nữ Việt Nam thật vui vẻeee <3</p>
-        <p>I am... </p>
-        <p>HBD Older Sis</p>
+      <div class='letters'>
+        <div class="letter letter1" onclick="$('.letter2').show()">
+          <p>Xin chúc bạn <span class="name"></span> ngày phụ nữ Việt Nam thật vui vẻeee 🎉🎉</p>
+              <p>Tiếp tục</p>
+        </div>
+        <div class="letter letter2" onclick="$('.letter3').show()" style="display: none;">
+          <p>Chúc cho bạn có một ngày ngập tràn hoa hồng, quà và những lời chúc nhoé! Hãy luôn tươi tắn, xinh xắn đáng
+            yêu và ngày
+            càng thành công trên con đường mình chọn!</p>
+          <p>Típ tụcccc</p>
+        </div>
+        <div class="letter letter3" onclick="$('.letter4').show()" style="display: none;">
+          <p>Và để ngày vui thêm phần trọn vẹn, đấng mồm lông bọn mình xin mời bạn đến với một bữa tiệc nhỏ được bọn mình đã chuẩn bị bằng tất cả đáy lòng của mình</p>
+          <p>Bấm để xem địa chỉiii</p>
+        </div>
+
+        <div class="letter letter4" onclick="$('.envelope').addClass('send')" style="display: none;">
+          <p>7:30 tối 22/10, bạn hãy tới Mộc Coffee (Đối diện HQV) để tham gia với bọn mình nhé</p>
+          
+          <img src='./img/moccoffee.png'>
+          <span>Mãi iu <333 </span>
+        </div>
       </div>
-      <!-- <div class="letter letter2">
-        <p>lol </p>
-        <p>I am... </p>
-        <p>HBD Older Sis</p>
-      </div> -->
       <div class="flip left-flip"></div>
       <div class="flip right-flip"></div>
       <div class="flip bottom-flip"></div>

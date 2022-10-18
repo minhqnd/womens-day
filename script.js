@@ -7,3 +7,10 @@ $(function(){
   }
   
 });
+
+let params = new URLSearchParams(location.search);
+var name = params.get('to');
+
+if (name) {
+  $('.name').text(name)
+}

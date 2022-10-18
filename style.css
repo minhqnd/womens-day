@@ -78,16 +78,16 @@ body {
   vertical-align: middle; */
 
   /* z-index: 1; */
-    /* position: absolute; */
-    /* top: 5px;
+  /* position: absolute; */
+  /* top: 5px;
     left: 10px; */
-    /* width: 530px; */
-    /* height: 346.66667px; */
-    background-color: #FFF;
-    border-radius: 5px;
-    padding: 30px 30px;
-    box-sizing: border-box;
-    /* box-shadow: 0px 1px 100px #fbc0b9eb; */
+  /* width: 530px; */
+  /* height: 346.66667px; */
+  background-color: #FFF;
+  border-radius: 5px;
+  padding: 30px 30px;
+  box-sizing: border-box;
+  /* box-shadow: 0px 1px 100px #fbc0b9eb; */
 
 }
 
@@ -96,35 +96,73 @@ body {
   margin: 0;
 }
 
+.envelope .back {
+  cursor: pointer;
+}
+
+.envelope .back .letter1 {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
 .envelope .back .letter1 p:first-child {
   font-size: 40px;
-  line-height: 50px;
+  /* line-height: 50px; */
   color: #ff969f;
 }
 
 .envelope .back .letter1 p:last-child {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .envelope .back .letter2 p {
-  font-size: 30px;
-  /* line-height: 20px; */
+  font-size: 27px;
   letter-spacing: 2px;
   color: #ff969f;
 }
 
 .envelope .back .letter2 p:nth-child(2) {
-  font-size: 30px;
+  font-size: 25px;
   color: black;
-}
-
-.envelope .back .letter2 p:nth-child(3) {
   font-size: 30px;
-  color: #f57882;
-  margin-top: 100px;
+  padding: 0px;
   float: right;
 }
 
+.envelope .back .letter3 p {
+  font-size: 27px;
+  letter-spacing: 2px;
+  color: #ff969f;
+}
+
+.envelope .back .letter3 p:nth-child(2) {
+  font-size: 25px;
+  color: black;
+  font-size: 30px;
+  padding: 0px;
+  float: right;
+}
+
+.envelope .back .letter4 p {
+  font-size: 27px;
+  letter-spacing: 2px;
+  color: #ff969f;
+}
+
+.envelope .back .letter4 img {
+  margin-left: 30px;
+  height: 150px;
+  width: auto;
+  transform: rotate(-4deg)
+}
+
+.envelope .back .letter4 span {
+color: #ff969f;
+  font-size: 24px;
+  margin-top: 30px;
+  float: right;
+}
 
 
 /* .envelope .front .mail p:first-child {
@@ -139,25 +177,25 @@ body {
 
 .envelope .front .mail .from {
   font-size: 35px;
-    /* line-height: 20px; */
-    letter-spacing: 2px;
-    color: #f57882;
+  /* line-height: 20px; */
+  letter-spacing: 2px;
+  color: #f57882;
 }
 
 .envelope .front .mail .to {
   padding-top: 20px;
   font-size: 35px;
-    color: #f57882;
-    /* margin-top: 100px; */
-    /* float: right; */
+  color: #f57882;
+  /* margin-top: 100px; */
+  /* float: right; */
 }
 
 .envelope .front .mail .next {
   padding-top: 20px;
   font-size: 25px;
-    /* color: #f57882; */
-    margin-top: 130px;
-    float: right;
+  /* color: #f57882; */
+  margin-top: 130px;
+  float: right;
 }
 
 .envelope .back {
@@ -340,8 +378,20 @@ body {
   animation: flip-open 1s 1s forwards;
 }
 
-.envelope.open .letter {
+.envelope.open .letter1 {
   animation: letter-out 1s 2s forwards;
+}
+
+.envelope.open .letter2 {
+  animation: letter-out 0.8s 0.8s forwards;
+}
+
+.envelope.open .letter3 {
+  animation: letter-out 0.8s 0.8s forwards;
+}
+
+.envelope.open .letter4 {
+  animation: letter-out 0.8s 0.8s forwards;
 }
 
 .envelope.send {
