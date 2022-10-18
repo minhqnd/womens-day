@@ -10,7 +10,7 @@ body {
   margin: 0;
   background-color: mistyrose;
   position: relative;
-  perspective: 0px;
+  perspective: 800px;
   overflow: hidden;
 }
 
@@ -376,6 +376,10 @@ color: #ff969f;
 
 .envelope.open .top-flip {
   animation: flip-open 1s 1s forwards;
+}
+
+.envelope.open .letter {
+  animation: letter-out 1s 2s forwards;
 }
 
 .envelope.open .letter1 {
