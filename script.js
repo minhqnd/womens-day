@@ -12,6 +12,7 @@ let params = new URLSearchParams(location.search);
 var name = params.get('to');
 console.log(name);
 if (name != 'null') {
+  name.replace('%2520', ' ')
   $('.name').text(name)
 }
 
