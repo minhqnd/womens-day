@@ -12,8 +12,7 @@ let params = new URLSearchParams(location.search);
 var name = params.get('to');
 console.log(name);
 if (name != 'null') {
-  name.replace('%20', ' ')
-  $('.name').text(name)
+  $('.name').text(name.replace('%20', ' '))
 }
 
 
